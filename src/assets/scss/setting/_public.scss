@@ -1,0 +1,26 @@
+//스크롤 커스텀
+.yScroll{
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent;
+}
+::-webkit-scrollbar-corner{
+    background-color: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background-color: var(--scrollThumb); //#58585e
+    //트랙사이 간격
+    //background-clip: padding-box;
+    //border: 2px solid transparent;
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}

@@ -1,0 +1,43 @@
+:root {
+    --mainfont-noto: "NotoSans";
+
+    --main-color: #7c96a6;
+
+    --black: #222;
+    --white: #fff;
+
+    --red: #f00;
+
+    //달력일정색상
+    --c1:  #f6bf26;
+    --c2:  #f6a626;
+    --c3:  #1ec73a;
+    --c4:  #21d9db;
+    --c5:  #217cdb;
+    --c6:  #8221db;
+    --c7:  #db21cf;
+
+    --scrollTrack: #f2f2f7;
+    --scrollThumb: #ccc;
+    --navBg: #eaf3f8;
+    --navLiBg: #d7e8f2;
+    --tableB: #dadcea;
+    
+    // 폰트 셋팅
+    font-family: var(--mainfont-noto);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    
+    // 폰트 최적화
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  
+    // @media (max-width: 800px) {
+    //     font-size: 14px;
+    //     line-height: 1.4;
+    // }
+}

@@ -1,0 +1,65 @@
+
+.cal__header{
+    padding: 0 rem(20) rem(18);
+    height: rem(54);
+}
+.cal__main{
+    table{
+        width: 100%;
+        th,
+        td{
+            border: 1px solid var(--tableB);
+        }
+        th{
+            padding: rem(4);
+            border-top: 0;
+            height: re(33);
+        }
+        tbody{
+            tr{
+                height: calc((100vh - 175px) / 6);
+                max-height: calc((100vh - 175px) / 6);
+            }
+            td{
+                padding: rem(8) rem(4);
+                vertical-align: top;
+                strong{
+                    padding: 0 rem(4);
+                }
+                &.today{
+                    strong{
+                        display: inline-block;
+                        width: rem(26);
+                        height: rem(26);
+                        color: var(--white);
+                        font-weight: normal;
+                        text-align: center;
+                        line-height: rem(25);
+                        border-radius: rem(20);
+                        background-color: #485d79;
+                    }
+                }
+            }
+            .plan{
+                padding: 0 rem(4);
+                border-radius: rem(6);
+                //color: var(--white);
+                @include line-one;
+                &.plan{
+                    margin-top: rem(2);
+                }
+                &.c1{background-color: var(--c1);}
+                &.c2{background-color: var(--c2);}
+                &.c3{background-color: var(--c3);}
+                &.c4{background-color: var(--c4);}
+                &.c5{background-color: var(--c5);}
+                &.c6{background-color: var(--c6);}
+                &.c7{background-color: var(--c7);}
+                &.etc{
+                    font-size: rem(30);
+                    //이미지로 대체하기
+                }
+            }
+        }
+    }
+}

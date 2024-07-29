@@ -1,0 +1,42 @@
+@font-face{
+    font-display: swap; //선랜더링 후폰트적용
+    font-family: "NotoSans";
+    font-style: thin;
+    font-weight: 100;
+    src: url(../font/NotoSans-Thin.woff2) format('woff2'); 
+}
+@font-face{
+    font-display: swap;
+    font-family: "NotoSans";
+    font-style: light;
+    font-weight: 300;
+    src: url(../font/NotoSans-Light.woff2) format('woff2');
+}
+@font-face{
+    font-display: swap;
+    font-family: "NotoSans";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/NotoSans-Regular.woff2) format('woff2');
+}
+@font-face{
+    font-display: swap;
+    font-family: "NotoSans";
+    font-style: medium;
+    font-weight: 500;
+    src: url(../font/NotoSans-Medium.woff2) format('woff2');
+}
+@font-face{
+    font-display: swap;
+    font-family: "NotoSans";
+    font-style: bold;
+    font-weight: 700;
+    src: url(../font/NotoSans-Bold.woff2) format('woff2');
+}
+@font-face{
+    font-display: swap;
+    font-family: "NotoSans";
+    font-style: black;
+    font-weight: 900;
+    src: url(../font/NotoSans-Black.woff2) format('woff2');
+}

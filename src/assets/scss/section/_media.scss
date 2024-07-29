@@ -1,0 +1,89 @@
+@media (max-width: 960px) {
+    .header__menu{
+        .header__icon,
+        .header__close{
+            display: inline-block;
+            width: rem(40);
+            height: rem(4);
+            border-radius: rem(30);
+            background-color: var(--main-color);
+            position: relative;
+            z-index: 99;
+            &::before,
+            &::after{
+                content:'';
+                width: rem(40);
+                height: rem(4);
+                border-radius: rem(30);
+                background-color: var(--main-color);
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            &::after{
+                bottom: -10px;
+            }
+        }
+        .header__close{
+            margin-bottom: rem(40);
+            width: 0;
+            &::before{transform: rotate(-45deg);}
+            &::after{transform: rotate(45deg);}
+        }
+        .menu{
+            padding: rem(30) rem(20);
+            padding-right: 0;
+            width: 40vw;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background-color: var(--navBg);
+            box-shadow: 1px 1px 30px rgba(0,0,0,0.4);
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 100;
+            .yScroll{
+                height: 100vh;
+                overflow-y: auto;                
+                &::-webkit-scrollbar {
+                    width: 6px;
+                }
+            }
+            ul{
+                padding: rem(10) 0;
+                & + ul{
+                    position: relative;
+                    &::before{
+                        content:'';
+                        width: calc(100% - 55px);
+                        height: 1px;
+                        background-color: var(--tableB);
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        transform: translate(calc(-50% - 5px));
+                    }
+                }
+            }
+            a{
+                display: block;
+                padding: rem(25);
+                border-top-left-radius: rem(35);
+                border-bottom-left-radius: rem(35);
+            }
+            li{
+                &.active{
+                    a{
+                        background-color: var(--navLiBg);
+                    }
+                }
+            }
+        }
+        &.active{
+            .menu{
+                display: block;
+            }
+        }
+    }
+}
