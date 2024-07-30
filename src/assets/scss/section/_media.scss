@@ -1,36 +1,36 @@
 @media (max-width: 960px) {
-    .header__menu{
-        .header__icon,
-        .header__close{
-            display: inline-block;
+    .nav__open,
+    .nav__close{
+        display: inline-block;
+        width: rem(40);
+        height: rem(4);
+        border-radius: rem(30);
+        background-color: var(--main-color);
+        position: relative;
+        z-index: 99;
+        &::before,
+        &::after{
+            content:'';
             width: rem(40);
             height: rem(4);
             border-radius: rem(30);
             background-color: var(--main-color);
-            position: relative;
-            z-index: 99;
-            &::before,
-            &::after{
-                content:'';
-                width: rem(40);
-                height: rem(4);
-                border-radius: rem(30);
-                background-color: var(--main-color);
-                position: absolute;
-                bottom: -10px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            &::after{
-                bottom: -10px;
-            }
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
         }
-        .header__close{
-            margin-bottom: rem(40);
-            width: 0;
-            &::before{transform: rotate(-45deg);}
-            &::after{transform: rotate(45deg);}
+        &::after{
+            bottom: -10px;
         }
+    }
+    .nav__close{
+        margin-bottom: rem(40);
+        width: 0;
+        &::before{bottom: -10px; transform: rotate(-45deg);}
+        &::after{transform: rotate(45deg);}
+    }
+    .nav__menu{
         .menu{
             padding: rem(30) rem(20);
             padding-right: 0;
@@ -41,8 +41,9 @@
             box-shadow: 1px 1px 30px rgba(0,0,0,0.4);
             position: fixed;
             top: 0;
-            right: 0;
+            right: -40vw;
             z-index: 100;
+            transition: all .3s;
             .yScroll{
                 height: 100vh;
                 overflow-y: auto;                
@@ -82,7 +83,8 @@
         }
         &.active{
             .menu{
-                display: block;
+                // display: block;
+                right: 0;
             }
         }
     }

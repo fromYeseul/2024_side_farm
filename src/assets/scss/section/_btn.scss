@@ -1,0 +1,21 @@
+.float__btn{
+    position: absolute;
+    bottom: 5vw;
+    right: 5vw;
+}
+
+.btn{
+    &.add{
+        // padding: rem(20);
+        display: inline-block;
+        width: rem(50);
+        height: rem(50);
+        font-size: rem(30);
+        color: var(--white);
+        text-align: center;
+        line-height: rem(50);
+        border-radius: rem(10);
+        background-color: var(--c7);
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    }
+}
